@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `null`;
+
+exports[`should render correctly 2`] = `
+<div
+  className="ant-table-wrapper"
+>
+  <div
+    className="ant-spin-nested-loading"
+  >
+    <div
+      className="ant-spin-container"
+    >
+      <div
+        className="ant-table ant-table-default ant-table-scroll-position-left"
+        style={Object {}}
+      >
+        <div
+          className="ant-table-title"
+        >
+          <h3>
+            test
+          </h3>
+        </div>
+        <div
+          className="ant-table-content"
+        >
+          <div
+            className="ant-table-body"
+            onScroll={[Function]}
+            onWheel={[Function]}
+            style={Object {}}
+          >
+            <table
+              className=""
+              style={Object {}}
+            >
+              <colgroup>
+                <col
+                  className="ant-table-expand-icon-col"
+                />
+                <col
+                  style={
+                    Object {
+                      "minWidth": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />
+                <col
+                  style={
+                    Object {
+                      "minWidth": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />
+                <col
+                  style={
+                    Object {
+                      "minWidth": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />
+              </colgroup>
+              <thead
+                className="ant-table-thead"
+              >
+                <tr
+                  style={
+                    Object {
+                      "height": null,
+                    }
+                  }
+                >
+                  <th
+                    className="ant-table-expand-icon-th"
+                    rowSpan={1}
+                    title=""
+                  />
+                  <th
+                    className=""
+                  >
+                    <span
+                      className="ant-table-header-column"
+                    >
+                      <div>
+                        <span
+                          className="ant-table-column-title"
+                        >
+                          a
+                        </span>
+                        <span
+                          className="ant-table-column-sorter"
+                        />
+                      </div>
+                    </span>
+                  </th>
+                  <th
+                    className=""
+                  >
+                    <span
+                      className="ant-table-header-column"
+                    >
+                      <div>
+                        <span
+                          className="ant-table-column-title"
+                        >
+                          c
+                        </span>
+                        <span
+                          className="ant-table-column-sorter"
+                        />
+                      </div>
+                    </span>
+                  </th>
+                  <th
+                    className=""
+                  >
+                    <span
+                      className="ant-table-header-column"
+                    >
+                      <div>
+                        <span
+                          className="ant-table-column-title"
+                        >
+                          Actions
+                        </span>
+                        <span
+                          className="ant-table-column-sorter"
+                        />
+                      </div>
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                className="ant-table-tbody"
+              >
+                <tr
+                  className="ant-table-row ant-table-row-level-0"
+                  data-row-key="f"
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onDoubleClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "height": null,
+                    }
+                  }
+                >
+                  <td
+                    className="ant-table-row-expand-icon-cell"
+                  />
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    2
+                  </td>
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    4
+                  </td>
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    <a
+                      href="javascript:;"
+                      onClick={[Function]}
+                    >
+                      Remove
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<span
+  className=""
+>
+  <div
+    className="ant-upload ant-upload-drag"
+    onDragLeave={[Function]}
+    onDragOver={[Function]}
+    onDrop={[Function]}
+  >
+    <span
+      className="ant-upload ant-upload-btn"
+      onClick={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+        }
+      }
+      tabIndex="0"
+    >
+      <input
+        accept="application/json"
+        directory={null}
+        multiple={false}
+        onChange={[Function]}
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+        type="file"
+        webkitdirectory={null}
+      />
+      <div
+        className="ant-upload-drag-container"
+      >
+        <h3>
+          Drop JSON File
+        </h3>
+      </div>
+    </span>
+  </div>
+</span>
+`;
+
+exports[`should render correctly 2`] = `
+<span
+  className=""
+>
+  <div
+    className="ant-upload ant-upload-drag"
+    onDragLeave={[Function]}
+    onDragOver={[Function]}
+    onDrop={[Function]}
+  >
+    <span
+      className="ant-upload ant-upload-btn"
+      onClick={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      style={
+        Object {
+          "height": undefined,
+        }
+      }
+      tabIndex="0"
+    >
+      <input
+        accept="application/json"
+        directory={null}
+        multiple={false}
+        onChange={[Function]}
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+        type="file"
+        webkitdirectory={null}
+      />
+      <div
+        className="ant-upload-drag-container"
+      >
+        <h3>
+          Drop JSON File
+        </h3>
+      </div>
+    </span>
+  </div>
+</span>
+`;

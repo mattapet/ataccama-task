@@ -2,6 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { act } from 'react-dom/test-utils';
+import renderer from 'react-test-renderer';
 
 import FileStatus from '../FileStatus';
 //#endregion
@@ -16,6 +17,21 @@ beforeEach(() => {
 afterEach(() => {
   container && document.body.removeChild(container);
   container = null;
+});
+
+it('renders correctly', () => {
+  // Arrange
+  // Act
+  const component1 = renderer.create(
+    <FileStatus file={null} onClear={() => {}} />
+  );
+  const component2 = renderer.create(
+    <FileStatus file={new File([], 'test.json')} onClear={() => {}} />
+  );
+
+  // Assert
+  expect(component1).toMatchSnapshot();
+  expect(component2).toMatchSnapshot();
 });
 
 it('should display "No File Selected" when passed `null` file', () => {
