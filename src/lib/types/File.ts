@@ -17,6 +17,7 @@ export interface Kids {
 }
 
 export interface Record {
+  _id: string;
   data: Data;
   kids: Kids;
 }

@@ -2,6 +2,8 @@
 import { Data, Kid, Kids, Record, Records, File } from 'lib/types/File';
 //#endregion
 
+let _id: number = 0;
+
 /**
  * Returns `true` if given value is non-`null` object, otherwise `false`.
  */
@@ -67,6 +69,8 @@ export function parseRecord(payload: any): Record {
   }
   const { data, kids } = payload;
   return {
+    // Ensure we can uniquely identify each record
+    _id: `${++_id}`,
     data: parseData(data),
     kids: parseKids(kids),
   };
