@@ -36,6 +36,7 @@ const View: React.FunctionComponent<Props> = props => {
     <Table<Record>
       title={() => props.title && <h3>{props.title}</h3>}
       columns={columns([...properties], props.onRemove)}
+      size="middle"
       dataSource={props.records}
       rowKey={record => record._id}
       expandIcon={ExpandIcon}

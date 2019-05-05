@@ -15,7 +15,7 @@ Array [
         className="ant-spin-container"
       >
         <div
-          className="ant-table ant-table-default ant-table-scroll-position-left"
+          className="ant-table ant-table-middle ant-table-scroll-position-left"
           style={Object {}}
         >
           <div
@@ -204,7 +204,7 @@ Array [
         className="ant-spin-container"
       >
         <div
-          className="ant-table ant-table-default ant-table-scroll-position-left"
+          className="ant-table ant-table-middle ant-table-scroll-position-left"
           style={Object {}}
         >
           <div
