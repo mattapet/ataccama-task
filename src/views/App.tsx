@@ -19,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
 const Container = styled(Layout)`
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
 `;
 //#endregion
 

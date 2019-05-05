@@ -11,9 +11,7 @@ export interface Kid {
 }
 
 export interface Kids {
-  [key: string]: {
-    records: Record[];
-  };
+  [key: string]: Kid;
 }
 
 export interface Record {
