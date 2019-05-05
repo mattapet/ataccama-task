@@ -1,0 +1,56 @@
+version: 2.1
+
+executors:
+  default-executor:
+    docker:
+      - image: circleci/node:latest
+
+jobs:
+  install:
+    executor: default-executor
+    steps:
+      - checkout
+      - run:
+          name: Update yarn
+          command: 'sudo npm install -g yarn@latest'
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Install dependencies
+          command: yarn install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+
+  compile:
+    executor: default-executor
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Compile typescript
+          command: ./node_modules/.bin/tsc --project tsconfig.json
+
+  test:
+    executor: default-executor
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Test
+          command: yarn test --ci
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - install
+      - compile:
+          requires:
+            - install
+      - test:
+          requires:
+            - compile
