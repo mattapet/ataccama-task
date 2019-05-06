@@ -1,3 +1,15 @@
+# Ataccama test task -- JSON Viewer
+
+[![CircleCI](https://circleci.com/gh/mattapet/ataccama-task.svg?style=svg&circle-token=6d646356d6ecc1769cced27f4356fe74546e115d)](https://circleci.com/gh/mattapet/ataccama-task)
+
+This repository holds sources for a `ataccama-task` project, which is a simple single page web application for displaying and interacting with JSON files in specified format. The application targets primarily desktop web browsers -- scaling and visuals are not optimized for viewing on mobile devices.
+
+### Example
+
+Example of the input can be found in [data-1.json](data-1.json) file.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
